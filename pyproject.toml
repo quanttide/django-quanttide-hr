@@ -2,26 +2,23 @@
 requires = ["setuptools>=61", "setuptools.scm"]
 build-backend = "setuptools.build_meta"
 
-[project]
+[tool.poetry]
 # name it as your package name
 name = "django-quanttide-hr"
 # semetric versions
 version = "0.1.0-alpha.1"
 # describe the package within one sentence
 description = "量潮人力资源Django工具包"
-authors = [{name = "QuantTide Inc.", email = "opensource@quanttide.com"}]
-license = {text = "Apache 2.0 License"}
+authors = ["QuantTide Inc. <opensource@quanttide.com>"]
+license = "Apache-2.0"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Framework :: Django",
 ]
-requires-python = '>=3'
-dependencies = [
-    "django>=3.0",
-    "djangorestframework>=3.0",
-]
 
+[tool.poetry.dependencies]
+python = "^3.9"
+django = ">=3.0"
+djangorestframework = ">=3.0"
+django-quanttide = {git = "https://github.com/quanttide/django-quanttide.git"}
 
-[project.readme]
-file = "README.md"
-content-type = "text/markdown"
