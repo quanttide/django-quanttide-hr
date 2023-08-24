@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=61", "setuptools.scm"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 # name it as your package name
